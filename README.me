@@ -1,0 +1,27 @@
+# Rule Engine
+
+## Overview
+
+The Rule Engine is a simple three-tier application designed to evaluate user eligibility based on various attributes like age, department, income, and experience. It uses an Abstract Syntax Tree (AST) to represent conditional rules, allowing for dynamic creation, combination, and modification of these rules.
+
+## Features
+
+- **Create Rules**: Dynamically create eligibility rules using a simple string format.
+- **Combine Rules**: Combine multiple rules into a single AST for efficient evaluation.
+- **Evaluate Rules**: Evaluate user attributes against the rules to determine eligibility.
+- **Error Handling**: Basic error handling for invalid rule strings or data formats.
+
+## Architecture
+
+The application follows a three-tier architecture:
+
+1. **User Interface**: A simple API for rule management.
+2. **Business Logic**: A rule engine that processes and evaluates the rules.
+3. **Data Storage**: A SQLite database for storing rules and metadata.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd RuleEngine
